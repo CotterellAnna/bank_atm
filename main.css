@@ -1,0 +1,127 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+label{
+    width: fit-content;
+}
+.atm{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 10px 10px black;
+    padding: 20px;
+    width: 30%;
+}
+#deposit{
+    display: none;
+}
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.balance-box{
+    display: flex;
+    justify-content: center;
+}
+#withdraw{
+    display: none;
+}
+.bal{
+    border: none;
+    text-align: center;
+    outline: none;
+    width: 50px;
+    padding: 0px;
+}
+#withdraw_amt, #deposit_amt{
+    width: 100%;
+    border: 2px outset #121212;
+    margin: 10px;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+    outline: none;
+}
+#withdraw_atm::-webkit-outer-spin-button,
+#withdraw_amt::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  #deposit_amt::-webkit-outer-spin-button,
+#deposit::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+  }
+.btn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: skyblue;
+}
+.new-balance-content{
+    display: flex;
+}
+
+.content{
+    text-align: center;
+}
+.btn:hover{
+    cursor: pointer;
+}
+#fail{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#fail .content i{
+    color: tomato;
+    font-size: 40px;
+}
+h5{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+h1{
+    margin: 5px 0px;
+}
+#success{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#success #new_bal{
+    outline: none;
+    border: none;
+    margin: 0px;
+    text-align: center;
+    width: 50px;
+    padding: 0px;
+}
+#success .content i{
+    color: rgb(38, 190, 38);
+    font-size: 40px;
+}
+.close{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.close i{
+    background: #121212;
+    border-radius: 50%;
+    padding: 5px;
+}
+.close :hover{
+    cursor: pointer;
+}
+
+  
